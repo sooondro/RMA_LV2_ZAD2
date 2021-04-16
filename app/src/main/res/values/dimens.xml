@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="imageLength">100dp</dimen>
+    <dimen name="match_constraint">0dp</dimen>
+    <dimen name="spacingDefault">5dp</dimen>
+    <dimen name="textSizeLarge">25sp</dimen>
+    <dimen name="textSizeNormal">15sp</dimen>
+</resources>

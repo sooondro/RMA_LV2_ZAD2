@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_newPerson_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_newPerson_header"
+        android:textAlignment="center"
+        android:textSize="@dimen/textSizeLarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_newPerson_name_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="@dimen/spacingDefault"
+        app:layout_constraintTop_toBottomOf="@+id/tv_newPerson_header">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_newPerson_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/newPerson_titleInputHint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_newPerson_dateOfBirth_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_newPerson_name_input"
+        android:layout_margin="@dimen/spacingDefault">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_newPerson_dateOfBirth_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/newPerson_dateOfBirthInputHint"
+            android:inputType="date" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_newPerson_description_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_newPerson_dateOfBirth_input"
+        android:layout_margin="@dimen/spacingDefault">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_newPerson_description_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/newPerson_descriptionInputHint"
+            android:inputType="textMultiLine"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_newPerson_quotes_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_newPerson_description_input"
+        android:layout_margin="@dimen/spacingDefault">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_newPerson_quotes_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/newPerson_quotesInputHint"
+            android:inputType="textMultiLine" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_newPerson_imageUrl_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/til_newPerson_quotes_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="@dimen/spacingDefault">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_newPerson_imageUrl_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/newPerson_imageUrlInputHint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_newPerson_save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_newPerson_quotes_input"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="@dimen/spacingDefault"
+        android:text="@string/newPerson_saveBtn"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
