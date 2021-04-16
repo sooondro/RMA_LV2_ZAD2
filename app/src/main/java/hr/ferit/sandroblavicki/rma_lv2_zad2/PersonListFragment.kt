@@ -25,12 +25,10 @@ class PersonListFragment: Fragment() {
         }
     }*/
 
-    override fun onResume() {
+    /*override fun onResume() {
         super.onResume()
         (personListBinding.rvPersonList.adapter as PersonAdapter).refreshData(PeopleRepository.getPeople())
-    }
-
-
+    }*/
 
 
     override fun onCreateView(

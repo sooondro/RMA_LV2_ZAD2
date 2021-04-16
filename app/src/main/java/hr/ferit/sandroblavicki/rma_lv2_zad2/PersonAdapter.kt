@@ -33,6 +33,5 @@ class PersonAdapter(
     override fun onBindViewHolder(holder: PersonViewHolder, position: Int) {
         val person = people[position]
         holder.bind(person, listener)
-
     }
 }

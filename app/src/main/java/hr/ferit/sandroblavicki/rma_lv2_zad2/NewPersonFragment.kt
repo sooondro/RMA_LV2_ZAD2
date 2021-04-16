@@ -43,5 +43,10 @@ class NewPersonFragment : Fragment() {
         Log.d("SANDRO", newPerson.toString())
         Toast.makeText(context, "New Person Added", Toast.LENGTH_SHORT).show()
 
+        newPersonBinding.etNewPersonNameInput.text?.clear()
+        newPersonBinding.etNewPersonDescriptionInput.text?.clear()
+        newPersonBinding.etNewPersonDateOfBirthInput.text?.clear()
+        newPersonBinding.etNewPersonQuotesInput.text?.clear()
+        newPersonBinding.etNewPersonImageUrlInput.text?.clear()
     }
 }
