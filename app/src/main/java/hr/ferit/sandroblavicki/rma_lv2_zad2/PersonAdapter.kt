@@ -19,8 +19,8 @@ class PersonAdapter(
     public fun refreshData(people: List<Person>){
         this.people.clear()
         this.people.addAll(people)
-        /*this.notifyDataSetChanged()*/
-        notifyItemInserted(itemCount-1)
+        this.notifyDataSetChanged()
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PersonViewHolder {
